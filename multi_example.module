@@ -7,7 +7,6 @@
  * Example module which demonstrates the power of ctools multistep wizard.
  */
 
-
 /**
  * Implements hook_menu().
  */
@@ -28,7 +27,6 @@ function multi_example_menu() {
   );
   return $items;
 }
-
 
 /**
  * Page callback: Dispalys example links.
@@ -136,8 +134,8 @@ function multi_example_form($js = NULL, $step = NULL) {
   ctools_include('wizard');
   $form = ctools_wizard_multistep_form($form_info, $step, $form_state);
   $output = drupal_render($form);
-  if ($js) {
 
+  if ($js) {
     // If javascript is active, we have to use a render array.
     $commands = array();
     if ($output === FALSE || !empty($form_state['complete'])) {
