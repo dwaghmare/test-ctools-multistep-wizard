@@ -5,3 +5,7 @@ Drupal 7 module
 
 ###Clone the repo
 `git clone https://github.com/geberele/test-ctools-multistep-wizard.git multi_example`
+
+or
+
+`git clone git@github.com:geberele/test-ctools-multistep-wizard.git multi_example`
